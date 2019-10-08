@@ -1,0 +1,56 @@
+
+\documentclass[brazil]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+
+\usepackage{pgfpages}
+
+\setbeameroption{show notes on second screen=right}
+
+\usetheme[
+    titleformat=allcaps,
+    progressbar=foot,
+    block=fill]{metropolis}           % Use metropolis theme
+
+\usepackage{tikz}
+    \usetikzlibrary{shapes.symbols, shapes.callouts, arrows, calc, backgrounds, fit}
+    
+    \makeatletter
+    \newcommand{\gettikzxy}[3]{%
+      \tikz@scan@one@point\pgfutil@firstofone#1\relax
+      \edef#2{\the\pgf@x}%
+      \edef#3{\the\pgf@y}%
+    }
+    \makeatother
+
+    \tikzstyle{arrow} = [thick,->,>=stealth]
+
+\usepackage{subfigure}
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+\usepackage{textcomp}
+
+%% Para estilizar emails
+\catcode`\_=11\relax
+\newcommand\email[1]{\_email #1\q_nil}
+\def\_email#1@#2\q_nil{%
+    \textlangle{}\href{mailto:#1@#2}{{\emailfont\detokenize{#1}\emailampersat\detokenize{#2}}}\textrangle{}%
+}
+\newcommand\emailfont{\ttfamily}
+\newcommand\emailampersat{{\color{red}\small@}}
+\catcode`\_=8\relax
+%% --
+
+\title{Estruturas de Dados \\ e Viagem no tempo}
+\date{\vspace*{2em} \normalsize V SESCOMP --- 2019}
+\author{{\Large Arthur Araruna\footnotemark[1]} \\ \textlangle\scriptsize \email{ararunaufc@gmail.com}\textrangle}
+\institute{\footnotemark[1]Universidade Federal do Ceará \\ \hphantom{\footnotemark[1]}Campus de Quixadá}
+\logo{\includegraphics[height=.8cm]{../../ufc-qxd-hor-col.png} \hspace*{.3cm}}
+
+\begin{document}
+    \frame{\titlepage}
+
+
+\end{document}
