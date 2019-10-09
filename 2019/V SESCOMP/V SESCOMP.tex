@@ -43,14 +43,54 @@
 \catcode`\_=8\relax
 %% --
 
+\usepackage[autostyle,portuguese=brazilian]{csquotes}
+
+    \def\signed #1{{\leavevmode\unskip\nobreak\hfil\penalty50\hskip1em
+    \hbox{}\nobreak\hfill #1%
+    \parfillskip=0pt \finalhyphendemerits=0 \endgraf}}
+
+    \newsavebox\mybox
+    \newenvironment{aquote}[1]
+    {\savebox\mybox{#1}\begin{quote}\openautoquote\hspace*{-.7ex}}
+    {\unskip\closeautoquote\vspace*{1mm}\signed{\usebox\mybox}\end{quote}}
+
+\usepackage{transparent}
+
 \title{Estruturas de Dados \\ e Viagem no tempo}
-\date{\vspace*{2em} \normalsize V SESCOMP --- 2019}
-\author{{\Large Arthur Araruna\footnotemark[1]} \\ \textlangle\scriptsize \email{ararunaufc@gmail.com}\textrangle}
-\institute{\footnotemark[1]Universidade Federal do Ceará \\ \hphantom{\footnotemark[1]}Campus de Quixadá}
+\date{\vspace*{1.5em} \large V SESCOMP --- 2019}
+\author{{{\Large Arthur Araruna}\raisebox{1ex}{$\alpha$}} \\ \scriptsize \email{ararunaufc@gmail.com}}
+\institute{\vspace*{3em} \scriptsize \raisebox{1ex}{$\alpha$}Universidade Federal do Ceará \\ \hphantom{\raisebox{1ex}{$\alpha$}}Campus de Quixadá}
 \logo{\includegraphics[height=.8cm]{../../ufc-qxd-hor-col.png} \hspace*{.3cm}}
 
 \begin{document}
     \frame{\titlepage}
 
+\section{Viagem no Tempo (segundo a física)}
 
+\section{Viagem no Tempo (segundo a ficção)}
+
+\section{Estruturas de Dados Temporais}
+
+\section{Um último enredo a analisar}
+
+    {
+    \usebackgroundtemplate{\transparent{0.4}\includegraphics[height=\paperheight]{img/save_the_nature.png}}
+    \begin{frame}
+
+        \setbeamercolor{item}{fg=black}
+        \setbeamercolor{normal text}{fg=black}
+        \usebeamercolor[fg]{normal text}
+        \begin{aquote}{???~\cite{abcd}}
+            Imagine um mundo onde viagem no tempo não exista, nem seja possível. Onde suas ações são imutáveis e você só tenha uma chance. E onde não existam reviravoltas para salvar o dia no final. {\bfseries O que você faria?}
+        \end{aquote}
+    \end{frame}
+    }
+
+    \begin{frame}[allowframebreaks]
+        \frametitle{Referências}
+
+        \begin{thebibliography}{99}
+            \bibitem{abcd} (tradução livre). Disponível em \url{www.youtube.com}.
+        \end{thebibliography}
+    \end{frame}
 \end{document}
