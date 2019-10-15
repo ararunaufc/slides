@@ -41,7 +41,8 @@
         
         \begin{block}{Persistência}
             \centering
-            \includegraphics[width=.5\textwidth]{example-image}
+            \transparent{0}\includegraphics[width=.5\textwidth]{example-image}
+            \note[item]{Várias linhas do tempo. Universos paralelos.}
         \end{block}
         
         \begin{itemize}
@@ -55,7 +56,8 @@
         
         \begin{block}{Retroatividade}
             \centering
-            \includegraphics[width=.5\textwidth]{example-image}
+            \transparent{0}\includegraphics[width=.5\textwidth]{example-image}
+            \note[item]{Uma única linha do tempo.}
         \end{block}
         
         \begin{itemize}
@@ -70,7 +72,7 @@
 
         \begin{block}{Persistência parcial}
             \centering
-            \includegraphics[width=.5\textwidth]{example-image}
+            \transparent{0}\includegraphics[width=.5\textwidth]{example-image}
         \end{block}
 
         \begin{itemize}
@@ -90,7 +92,7 @@
 
         \begin{block}{Persistência total}
             \centering
-            \includegraphics[width=.5\textwidth]{example-image}
+            \transparent{0}\includegraphics[width=.5\textwidth]{example-image}
         \end{block}
 
         \begin{itemize}
@@ -110,7 +112,7 @@
 
         \begin{block}{Persistência confluente}
             \centering
-            \includegraphics[width=.5\textwidth]{example-image}
+            \transparent{0}\includegraphics[width=.5\textwidth]{example-image}
         \end{block}
 
         \begin{itemize}
@@ -128,7 +130,7 @@
 
         \begin{block}{Persistência funcional}
             \centering
-            \includegraphics[width=.5\textwidth]{example-image}
+            \transparent{0}\includegraphics[width=.5\textwidth]{example-image}
         \end{block}
 
         \begin{itemize}
@@ -139,4 +141,43 @@
         \note[item]{Se inspira na forma de comportamento de linguagens funcionais.}
         \note[item]{Se diferencia das demais, pois anteriormente poderíamos alterar parte da memória, desde que o acesso e a interpretação das versões anteriores fosse preservado.}
         \note[item]{Inclui a capacidade de todas as anteriores, já que como nada é alterado, nada é perdido.}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Níveis de retroatividade}
+
+        \begin{block}{Retroatividade parcial}
+            \centering
+            \transparent{0}\includegraphics[width=.5\textwidth]{example-image}
+        \end{block}
+
+        \begin{itemize}
+            \item<1-> Atualizações podem ser adicionadas ou removidas em qualquer ``momento'' no passado.
+            \item<4-> Consultas só podem ter como alvo o ``momento presente''.
+        \end{itemize}
+
+        \note[item]{Seria como mandar alguém para o passado e manter a consciência de como o presente se altera.}
+        \note[item]{A física moderna não permite conceber esse tipo de viagem no tempo.}
+        \note[item]{Podem acontecer ``paradoxos''.}
+        \note[item]{MIB 3}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Níveis de retroatividade}
+
+        \begin{block}{Retroatividade total}
+            \centering
+            \transparent{0}\includegraphics[width=.5\textwidth]{example-image}
+        \end{block}
+
+        \begin{itemize}
+            \item<1-> Atualizações podem ser adicionadas ou removidas em qualquer ``momento'' no passado.
+            \item<2-> Consultas podem ser adicionadas ou removidas em qualquer ``momento'' no passado.
+            \begin{itemize}
+                \item<3-> Alterações têm um impacto muito maior (reação em cadeia).
+            \end{itemize}
+        \end{itemize}
+
+        \note[item]{Seria como você ir para o passado e interferir com o andamento dos acontecimentos.}
+        \note[item]{Podem acontecer ``paradoxos''.}
     \end{frame}
