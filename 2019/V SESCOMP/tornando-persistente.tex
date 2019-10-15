@@ -1,0 +1,17 @@
+\begin{frame}
+    \frametitle{Tornando persistente}
+
+    \begin{itemize}
+        \item Forma mais trivial: guardar tudo!
+        \item Forma mais inteligente: reaproveitar memória.
+    \end{itemize}
+
+    \begin{itemize}
+        \item No modelo de Máquina de Ponteiros, somos capazes de:
+        \begin{itemize}
+            \item Parcialmente persistente: $O(n)$, $O(\lg n)$
+            \item Totalmente persistente: $O(m)$, para alguns casos
+            \item Confluente, Funcional, Retroativo: {\em quase tudo está em aberto}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
